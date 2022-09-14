@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../css/features.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- material-design-iconic  -->
+    <link
+      rel="stylesheet"
+      href="../material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <title>Features</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../images/logo.png" alt="logo" />
+      </div>
+      <nav>
+      <ul class="main-menu">
+        <div class="home">
+          <li>
+            <a href="../../index.html" style="padding-bottom: 3rem">Home</a>
+            <ul class="sub-menu">
+              <li><a href="#">Homepage 1</a></li>
+              <li><a href="#">Homepage 2</a></li>
+              <li><a href="#">Homepage 3</a></li>
+            </ul>
+          </li>
+        </div>
+        <li><a href="shop.html">Shop</a></li>
+        <li>
+          <span>HOT</span>
+          <a href="features.html">Features</a>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="header-icons">
+        <i class="zmdi zmdi-search"></i>
+        <i class="zmdi zmdi-shopping-cart"></i>
+        <i class="zmdi zmdi-favorite-outline"></i>
+      </div>
+    </header>
+    <div class="empty"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <div class="features">
+      <div class="home">
+        <a href="/index.html">Home</a>
+        <i class="fa fa-angle-right"></i>
+        <p>Shoping Cart</p>
+      </div>
+      <div class="cart-table">
+        <div class="table">
+          <table>
+            <tr class="table-head">
+              <th class="colmn-1">PRODUCT</th>
+              <th class="colmn-2"></th>
+              <th class="colmn-3">PRICE</th>
+              <th class="colmn-4">QUANTITY</th>
+              <th class="colmn-5">TOTAL</th>
+            </tr>
+            <tr class="table-row">
+              <td class="colmn-1">
+                <div class="item-cart-img">
+                  <img src="/assets/images/download.webp" alt="" />
+                </div>
+              </td>
+              <td class="colmn-2">Fresh Strawberries</td>
+              <td class="colmn-3">$ 36.00</td>
+              <td class="colmn-4">
+                <div class="increment">
+                  <i class="zmdi zmdi-plus"></i>
+                </div>
+                <input class="num-product" type="number" value="1" />
+                <div class="decrement">
+                  <i class="zmdi zmdi-minus"></i>
+                </div>
+              </td>
+              <td class="colmn-5">$ 36.00</td>
+            </tr>
+            <tr class="table-row">
+              <td class="colmn-1">
+                <div class="item-cart-img">
+                  <img src="/assets/images/download1.webp" alt="" />
+                </div>
+              </td>
+              <td class="colmn-2">Lightweight Jacket</td>
+              <td class="colmn-3">$ 16.00</td>
+              <td class="colmn-4">- 1 +</td>
+              <td class="colmn-5">$ 16.00</td>
+            </tr>
+          </table>
+          <div class="coupon-buttons">
+            <div class="coupons">
+              <input type="text" placeholder="Coupon Code" />
+              <button class="btn">APPLY COUPON</button>
+            </div>
+            <button class="btn">UPDATE CART</button>
+          </div>
+        </div>
+        <div class="cart-total">
+          <h2>CART TOTALS</h2>
+          <table class="total">
+            <th>Subtotal:</th>
+            <th>Shipping:</th>
+            <tr>
+              <td>$79.65</td>
+              <td></td>
+            </tr>
+          </table>
+          <div class="sub-total">
+            <span> </span>
+            <p>
+              There are no shipping methods available. Please double check your
+              address, or contact us if you need any help.
+            </p>
+          </div>
+          <div class="shipping"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <h4>CATEGORIES</h4>
+          <a href="#">Women</a>
+          <a href="#">Men</a>
+          <a href="#">Shoes</a>
+          <a href="#">Watches</a>
+        </div>
+        <div>
+          <h4>HELP</h4>
+          <a href="#">Track Order</a>
+          <a href="#">Returns</a>
+          <a href="#">Shipping</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div>
+          <h4>GET IN TOUCH</h4>
+          <p>
+            Any questions? Let us know in store at 8th floor, 379 Hudson St, New York,
+            NY 10018 or call us on (+1) 96 716 6879
+          </p>
+          <div class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h4>NEWSLETTER</h4>
+          <input type="text" placeholder="email@example.com" />
+          <button type="submit" class="btn">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="pay">
+          <img
+            src="/assets/images/xicon-pay-01.png.pagespeed.ic.xvOr_mBxdb.png"
+            alt=""
+          />
+          <img
+            src="/assets/images/xicon-pay-02.png.pagespeed.ic.rg_hDWQXGj.png"
+            alt=""
+          />
+          <img
+            src="/assets/images/xicon-pay-03.png.pagespeed.ic.oQPI6u_CWi.png"
+            alt=""
+          />
+          <img
+            src="/assets/images/xicon-pay-04.png.pagespeed.ic.lQoKBVZlWg.png"
+            alt=""
+          />
+          <img
+            src="/assets/images/xicon-pay-05.png.pagespeed.ic.x0LpVPNXiU.png"
+            alt=""
+          />
+        </div>
+        <p>
+          Copyright ©2022 All rights reserved | This template is made with
+          <i class="fa-regular fa-heart"></i> by<a href="#">Colorlib</a>
+        </p>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-gallery.js"></script>
+    <script src="../../index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+@import url("about.css");
+header {
+  box-shadow: 0 0 1px 0px gray;
+}
+
+.empty {
+  height: 150px;
+}

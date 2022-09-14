@@ -1,0 +1,153 @@
+@import url("about.css");
+header {
+  box-shadow: 0 0 1px 0px gray;
+}
+.empty {
+  height: 100px;
+}
+.features {
+  padding-right: 120px;
+  padding-left: 120px;
+}
+.home {
+  display: flex;
+  color: #888;
+  font-size: 12px;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home i {
+  font-size: 8px;
+}
+.home a {
+  color: #666;
+  font-size: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  padding: 0;
+  transition: 0.3s;
+}
+.home a:hover {
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+/* Table */
+.features .cart-table {
+  margin-top: 4rem;
+  display: flex;
+  gap: 60px;
+}
+.cart-table table {
+  width: 100%;
+  width: 680px;
+}
+.cart-table table,
+tr {
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+}
+.cart-table .table-row {
+  height: 185px;
+}
+.table .colmn-1 {
+  width: 133px;
+  padding-left: 50px;
+}
+.table .colmn-2 {
+  width: 220px;
+  font-size: 15px;
+}
+.table .colmn-3 {
+  width: 120px;
+  text-align: left;
+  font-size: 16px;
+}
+.table .colmn-4 {
+  width: 145px;
+  text-align: right;
+}
+.table .colmn-5 {
+  width: 172px;
+  padding-right: 50px;
+  text-align: right;
+  font-size: 16px;
+}
+.cart-table table td {
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.cart-table .table-head th {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  font-family: Poppins-Bold, sans-serif;
+  line-height: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.num-product {
+  width: calc(100% - 90px);
+  height: 100%;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background-color: #f7f7f7;
+}
+/* coupon-buttons  */
+.coupon-buttons {
+  display: flex;
+  width: 100%;
+  width: 680px;
+  padding: 2rem;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+}
+.coupon-buttons .coupons {
+  display: flex;
+  gap: 0.7rem;
+}
+.coupon-buttons .coupons input {
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  font-size: 15px;
+}
+.coupon-buttons .btn {
+  padding: 0.8rem 2rem;
+  color: #333;
+  background-color: #f7f7f7;
+  border: 1px solid var(--border-color);
+}
+.coupon-buttons .btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+/* Increment / Decremnt cart */
+
+/* Total in cart  */
+.cart-total {
+  width: 100%;
+  width: 360px;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+}
+.cart-total h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* mobile screen  */
+/* @media screen and (min-width: 768px) {
+  .features .cart-table {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+  }
+  .cart-total {
+    display: flex;
+    justify-content: center;
+  }
+} */

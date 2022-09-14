@@ -1,0 +1,81 @@
+@import url("about.css");
+
+.contact {
+  padding: var(--section-padding);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+}
+.line {
+  background-color: var(--border-color);
+  width: 3px;
+}
+.message,
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.message h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.5;
+  margin-top: 3rem;
+  text-align: center;
+}
+.email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.message .email,
+textarea {
+  border: 1px solid var(--border-color);
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  padding-left: 1.7rem;
+  color: #333;
+}
+textarea {
+  height: 250px;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.message ::placeholder {
+  color: gray;
+}
+.message button {
+  margin-bottom: 4rem;
+}
+.message .btn {
+  background-color: #333;
+  padding: 14px 40px;
+}
+.message .btn:hover {
+  background-color: var(--secondary-color);
+}
+.address {
+  margin: auto 5rem;
+}
+.address > div {
+  padding: 1rem 0;
+}
+.address h2 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 1rem 0;
+}
+.address p {
+  color: #888;
+}
+.address .our-phone p,
+.our-email p {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,64 @@
+@import "./assets/css/home.css";
+
+/* Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+:root {
+  --secondary-color: #717fe0;
+  --footer-color: #222;
+  --up-color-footer: #495081;
+  --up-color-default: #b8bff0;
+  --img-bg-color: #d7dbdc;
+  --text-color: #5b5b5a;
+  --section-padding: 90px;
+  --border-color: #e6e6e6;
+}
+.btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 17px 40px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: var(--footer-color);
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: rgb(113, 127, 224, 0.5);
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 14px;
+  transition: 0.3s;
+}
+
+#myBtn:hover {
+  background-color: #717fe0;
+  transition: 0.3s;
+}
+/* End Global Rules*/
+
