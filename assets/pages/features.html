@@ -82,12 +82,14 @@
               <td class="colmn-2">Fresh Strawberries</td>
               <td class="colmn-3">$ 36.00</td>
               <td class="colmn-4">
-                <div class="increment">
-                  <i class="zmdi zmdi-plus"></i>
-                </div>
-                <input class="num-product" type="number" value="1" />
-                <div class="decrement">
-                  <i class="zmdi zmdi-minus"></i>
+                <div class="counter">
+                  <div id="increment" class="sm-btn right">
+                    <i class="zmdi zmdi-minus "></i>
+                  </div>
+                  <div id="total-count" class="num-product sm-btn "></div>
+                  <div id="decrement" class="sm-btn left">
+                    <i class="zmdi zmdi-plus"></i>
+                  </div>
                 </div>
               </td>
               <td class="colmn-5">$ 36.00</td>
@@ -100,7 +102,17 @@
               </td>
               <td class="colmn-2">Lightweight Jacket</td>
               <td class="colmn-3">$ 16.00</td>
-              <td class="colmn-4">- 1 +</td>
+              <td class="colmn-4">
+                <div class="counter">
+                  <div id="increment2" class="sm-btn right">
+                    <i class="zmdi zmdi-minus "></i>
+                  </div>
+                  <div id="total-count2" class="num-product sm-btn "></div>
+                  <div id="decrement2" class="sm-btn left">
+                    <i class="zmdi zmdi-plus"></i>
+                  </div>
+                </div>
+              </td>
               <td class="colmn-5">$ 16.00</td>
             </tr>
           </table>
@@ -113,15 +125,10 @@
           </div>
         </div>
         <div class="cart-total">
-          <h2>CART TOTALS</h2>
-          <table class="total">
-            <th>Subtotal:</th>
-            <th>Shipping:</th>
-            <tr>
-              <td>$79.65</td>
-              <td></td>
-            </tr>
-          </table>
+          <h2 class="total-title">CART TOTALS</h2>
+          <span>Subtotal:</span>
+          <span>Shipping:</span>
+            <p>$79.65</p> 
           <div class="sub-total">
             <span> </span>
             <p>
@@ -133,6 +140,7 @@
         </div>
       </div>
     </div>
+    
     <footer>
       <div class="footer-top">
         <div>
