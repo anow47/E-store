@@ -82,6 +82,19 @@ span {
   position: relative;
   right: 10px;
 }
+.header-icons .zmdi-shopping-cart, .zmdi-favorite-outline{
+ position: relative;
+}
+.header-icons .zmdi-shopping-cart p, .zmdi-favorite-outline p{
+  position: absolute;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 4px;
+  top: -8px;
+  right: -13px;
+  font-weight: 400;
+}
 /******* Landing page  ********/
 .landing img {
   position: relative;
