@@ -46,7 +46,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+      </nav>
       <div class="header-icons">
         <i class="zmdi zmdi-search"></i>
         <i class="zmdi zmdi-shopping-cart"><p>2</p></i>
@@ -126,17 +126,47 @@
         </div>
         <div class="cart-total">
           <h2 class="total-title">CART TOTALS</h2>
-          <span>Subtotal:</span>
-          <span>Shipping:</span>
-            <p>$79.65</p> 
-          <div class="sub-total">
-            <span> </span>
-            <p>
-              There are no shipping methods available. Please double check your
-              address, or contact us if you need any help.
-            </p>
+          <div class="cart-container">
+            <div class="cart-container-left">
+              <h2 class="sub-title">Subtotal:</h2>
+            </div>
+            <div class="cart-container-right">
+              <p class="total-price">$79.65</p> 
+            </div>
           </div>
-          <div class="shipping"></div>
+          <div class="cart-container">
+            <div class="cart-container-left">
+              <h2 class="sub-title">Shipping:</h2>
+            </div>
+            <div class="cart-container-right">
+              <p>
+                There are no shipping methods available.<br> Please double check your
+                address, or contact us if you need any help.
+              </p>
+              <P>CALCULATE SHIPPING</P>
+              <div class="select-fields">
+              <select  name="" id="">
+                <option value="">Select a country...</option>
+                <option value="1">USA</option>
+                <option value="2">UK</option>
+              </select>
+            </div>
+              <input class="fields" type="text" placeholder="State / country">
+              <input class="fields" type="text" placeholder="Postcode / Zip">
+              <button class="btn">UPDATE TOTALS</button>
+            </div>
+          </div>
+          <div class="cart-container" style="border-bottom: none;">
+            <div class="cart-container-left">
+              <h2 class="sub-title">Total:</h2>
+            </div>
+            <div class="cart-container-right">
+              <p class="total-price">$79.65</p>
+            </div>
+          </div>
+          <div class="bottom-button">
+          <button class="btn">PROCEED TO CHECKOUT</button>
+        </div>
         </div>
       </div>
     </div>

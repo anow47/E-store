@@ -110,13 +110,13 @@ tr {
   border-radius: 50px;
   font-size: 15px;
 }
-.coupon-buttons .btn {
+.coupon-buttons .btn, .cart-container .btn {
   padding: 0.9rem 1.7rem;
   color: #333;
   background-color: #f7f7f7;
   border: 1px solid var(--border-color);
 }
-.coupon-buttons .btn:hover {
+.coupon-buttons .btn:hover, .cart-container .btn:hover {
   background-color: var(--secondary-color);
   color: #fff;
 }
@@ -153,7 +153,7 @@ tr {
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
 }
-.right:hover, .left:hover {
+.right:hover, .left:hover, .bottom-button .btn:hover {
   background-color: var(--secondary-color);
   color: #fff;
   transition: 0.3s;
@@ -169,8 +169,88 @@ tr {
   font-size: 20px;
   font-weight: 600;
   color: #333;
+  padding-bottom: 1rem;
 }
-
+.cart-container-right .total-price {
+  color: #333;
+  font-size: 18px;
+}
+.sub-title {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.466667;
+}
+.cart-container {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: center;
+  gap: 2rem;
+  border-bottom: 1px dashed #d9d9d9;
+  padding-top: 1rem;
+}
+.cart-container-right {
+  width: 65%;
+}
+.cart-container-right p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #888;
+  padding-bottom: 1rem;
+}
+.cart-container-right .fields {
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0.8rem 0.7rem;
+  margin: 0.5rem 0;
+  width: 80%;
+}
+.select-fields {
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  width: 80%;
+  position: relative;
+}
+.select-fields select {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  width: 90%;
+  cursor: pointer;
+}
+.select-fields select option {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 1rem 0;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.cart-container-left {
+  width: 22%;
+}
+.cart-container .btn {
+  padding: 0.8rem 1.7rem;
+  margin-top: 1rem ;
+  margin-bottom: 2rem;
+}
+.bottom-button .btn {
+  background-color: var(--footer-color);
+  color: #fff;
+  transition: 0.3s;
+  padding: 1rem 1.7rem;
+  width: 100%;
+  margin: 1rem 0;
+}
 /* mobile screen  */
 /* @media screen and (min-width: 768px) {
   .features .cart-table {
