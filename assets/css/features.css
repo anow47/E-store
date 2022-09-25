@@ -251,15 +251,23 @@ tr {
   width: 100%;
   margin: 1rem 0;
 }
-/* mobile screen  */
-/* @media screen and (min-width: 768px) {
-  .features .cart-table {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 60px;
+
+
+/* ======== Media Queries (Medium Devices ) ======= */
+@media screen and (max-width: 1024px){
+  .header {
+      /* height: 68vh; */
   }
-  .cart-total {
-    display: flex;
-    justify-content: center;
+}
+
+/* ======== Media Queries (Small Devices ) ======= */
+@media screen and (max-width: 600px){
+  .header {
+      /* height: 100vh; */
   }
-} */
+
+  .header_social,
+  .scroll_down {
+      /* display: none; */
+  }
+}

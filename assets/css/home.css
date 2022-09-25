@@ -24,15 +24,16 @@ header.stick {
   width: 133px;
   height: 17px;
 }
-.main-menu {
+/*****  Header Deskton navbar  *****/
+.desktop-main-menu {
   display: flex;
   position: relative;
-  right: 160px;
+  right: 70px;
 }
-.main-menu a:is(:link, :active, :visited).active {
+.desktop-main-menu a:is(:link, :active, :visited).active {
   color: var(--secondary-color);
 }
-.sub-menu {
+.desktop-sub-menu {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -43,13 +44,13 @@ header.stick {
   text-align: left;
   box-shadow: 0px 1px 5px -1px #464444;
 }
-ul li:hover .sub-menu {
+ul li:hover .desktop-sub-menu {
   display: block !important;
 }
-.sub-menu li a {
+.desktop-sub-menu li a {
   color: gray;
 }
-.main-menu li,
+.desktop-main-menu li,
 a {
   padding: 0 0.5rem;
   color: #333;
@@ -58,11 +59,11 @@ a {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
-.main-menu a:hover,
-.header-icons i:hover {
+.desktop-main-menu a:hover,
+.header-icons .icon:hover {
   color: var(--secondary-color);
 }
-span {
+.desktop span {
   position: absolute;
   bottom: 20px;
   right: 220px;
@@ -73,14 +74,52 @@ span {
   padding: 2px 5px;
   border-radius: 7px;
 }
+/*****  Header Mobile navbar  *****/
+.mobile-main-menu {
+  background-color: var(--secondary-color);
+  width: 100%;
+  /* height: 250px; */
+  padding-left: 10px;
+}
+.mobile-main-menu li {
+  padding: 12px 0;
+}
+.mobile-main-menu li a{
+  color: #fff;
+  padding: 0 0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.mobile-sub-menu{
+  display: none;
+}
+.mobile span {
+  display: none;
+}
 /* Header Icons*/
-.header-icons i {
+.header-icons .icon {
   color: #222;
   cursor: pointer;
   font-size: 25px;
   padding-left: 2rem;
   position: relative;
   right: 10px;
+}
+.header-icons .fa-bars {
+  color: #222;
+  font-size: 25px;
+  padding-left: 2rem;
+  position: relative;
+  right: 10px;
+}
+.header-icons .fa-times{
+  font-size: 30px;
+  padding-left: 2.2rem;
+  position: relative;
+  right: 12px;
+  /* transition: 0.3s; */
 }
 .header-icons .zmdi-shopping-cart, .zmdi-favorite-outline{
  position: relative;
@@ -94,6 +133,28 @@ span {
   top: -8px;
   right: -13px;
   font-weight: 400;
+}
+/*****  Header Mobile Responsive  *****/
+@media only screen and  (max-width: 992px){
+  .desktop-main-menu {
+    display: none;
+  }
+  header {
+  position: relative;
+  height: 70px;
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  .header-icons .icon {
+  padding-left: 1rem;
+  }
+}
+@media only screen and  (min-width: 992px){
+  .header-icons .fa-bars {
+    display: none;
+  }
+
 }
 /******* Landing page  ********/
 .landing img {
@@ -111,11 +172,14 @@ span {
 }
 /***  Banner  ***/
 .banner {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 25px;
   padding-bottom: var(--section-padding);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
-  justify-content: center;
+  place-items: center;
 }
 .banner-products {
   position: relative;
@@ -124,8 +188,8 @@ span {
 }
 .banner-products img {
   position: relative;
-  width: 368px;
-  height: 248px;
+  max-width:100%;
+  max-height:100%;
   top: 4px;
 }
 .banner-products h1 {
@@ -222,6 +286,13 @@ hr.line {
   color: #222;
   padding: 2rem 0;
 }
+/*****  Banners Responsive  ******/
+@media only screen and  (max-width: 768px){
+  .banner {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+}
 
 /*********** Product Section  **************/
 section {
@@ -233,6 +304,14 @@ section {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+}
+@media only screen and (max-width: 768px){
+  .product-top{
+    display: block;
+  }
+  .button-group{
+    padding-bottom: 2rem;
+  }
 }
 .button-group button {
   background: transparent;
@@ -341,8 +420,8 @@ section {
   transition: 0.5s ease-in-out;
 }
 .product-items .items .product img {
-  width: 270px;
-  height: 334px;
+  max-width:100%;
+  max-height:100%;
   transition: 0.5s ease-in-out;
   position: relative;
 }
@@ -420,6 +499,8 @@ section .load-more .btn:hover {
   background-color: var(--footer-color);
   color: #fff;
 }
+/*********** Product Section Responsive **********/
+
 /*********** End Product Section  **************/
 
 

@@ -25,12 +25,12 @@
       <div class="logo">
         <img src="./assets/images/logo.png" alt="logo" />
       </div>
-      <nav>
-        <ul class="main-menu">
+      <nav class="desktop">
+        <ul class="desktop-main-menu">
           <div class="home">
             <li>
               <a href="index.html" style="padding-bottom: 3rem">Home</a>
-              <ul class="sub-menu">
+              <ul class="desktop-sub-menu">
                 <li><a href="#">Homepage 1</a></li>
                 <li><a href="#">Homepage 2</a></li>
                 <li><a href="#">Homepage 3</a></li>
@@ -47,13 +47,35 @@
           <li><a href="assets/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
-  
       <div class="header-icons">
-        <i class="zmdi zmdi-search"></i>
-        <i class="zmdi zmdi-shopping-cart"><p>2</p></i>
-        <i class="zmdi zmdi-favorite-outline"><p>0</p></i>
+        <i class="zmdi zmdi-search icon"></i>
+        <i class="zmdi zmdi-shopping-cart icon"><p>2</p></i>
+        <i class="zmdi zmdi-favorite-outline icon"><p>0</p></i>
+        <i class="fa-solid fa-bars" onclick="toggleMenu(); changeMenuIcon(this)" ></i>
       </div>
     </header>
+    <nav class="mobile">
+      <ul id="mobile-main-menu" class="mobile-main-menu" style="display: block;">
+        <div class="home">
+          <li>
+            <a href="index.html" style="padding-bottom: 3rem">Home</a>
+            <ul class="mobile-sub-menu">
+              <li><a href="#">Homepage 1</a></li>
+              <li><a href="#">Homepage 2</a></li>
+              <li><a href="#">Homepage 3</a></li>
+            </ul>
+          </li>
+        </div>
+        <li><a href="assets/pages/shop.html">Shop</a></li>
+        <li>
+          <span>HOT</span>
+          <a href="assets/pages/features.html">Features</a>
+        </li>
+        <li><a href="assets/pages/blog.html">Blog</a></li>
+        <li><a href="assets/pages/about.html">About</a></li>
+        <li><a href="assets/pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <!--   Landing -->
     <div class="landing">
       <button onclick="topFunction()" id="myBtn" title="Go to top">
