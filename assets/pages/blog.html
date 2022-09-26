@@ -22,15 +22,47 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <a class="logo" href="../../index.html">
         <img src="../images/logo.png" alt="logo" />
+      </a>
+      <nav class="desktop">
+        <ul class="desktop-main-menu">
+          <div class="home">
+            <li>
+              <a href="../../index.html" style="padding-bottom: 3rem">Home</a>
+              <ul class="desktop-sub-menu">
+                <li><a href="#">Homepage 1</a></li>
+                <li><a href="#">Homepage 2</a></li>
+                <li><a href="#">Homepage 3</a></li>
+              </ul>
+            </li>
+          </div>
+          <li><a href="shop.html">Shop</a></li>
+          <li>
+            <span>HOT</span>
+            <a href="features.html">Features</a>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <i class="zmdi zmdi-search icon"></i>
+        <i class="zmdi zmdi-shopping-cart icon"><p>2</p></i>
+        <i class="zmdi zmdi-favorite-outline icon"><p>0</p></i>
+        <i class="fa-solid fa-bars" onclick="toggleMenu(); changeMenuIcon(this)" ></i>
       </div>
-      <nav>
-      <ul class="main-menu">
+    </header>
+    <nav class="mobile">
+      <ul id="mobile-main-menu" class="mobile-main-menu" style="display: none;">
         <div class="home">
           <li>
-            <a href="../../index.html" style="padding-bottom: 3rem">Home</a>
-            <ul class="sub-menu">
+            <div class="mobile-home">
+              <a href="index.html" >Home</a>
+              <i class="fa fa-angle-right" onclick="subMenu()"></i>
+            </div>
+            <ul id="mobile-sub-menu" class="mobile-sub-menu" style="display: none">
               <li><a href="#">Homepage 1</a></li>
               <li><a href="#">Homepage 2</a></li>
               <li><a href="#">Homepage 3</a></li>
@@ -39,20 +71,14 @@
         </div>
         <li><a href="shop.html">Shop</a></li>
         <li>
-          <span>HOT</span>
           <a href="features.html">Features</a>
+          <span>HOT</span>
         </li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-      <div class="header-icons">
-        <i class="zmdi zmdi-search"></i>
-        <i class="zmdi zmdi-shopping-cart"><p>2</p></i>
-        <i class="zmdi zmdi-favorite-outline"><p>0</p></i>
-      </div>
-    </header>
     <div class="empty"></div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa-solid fa-angle-up"></i>

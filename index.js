@@ -11,7 +11,18 @@ function toggleMenu() {
 const changeMenuIcon = function(icon){
   icon.classList.toggle('fa-times');
 }
+// mobile navbar sub-menu onclick
+function subMenu() {
+  let showMenu = document.getElementById("mobile-sub-menu");
+  if (showMenu.style.display === "none") {
+    showMenu.style.display = "block";
+  } else {
+    showMenu.style.display = "none";
+  }
+}
 
+// const button = document.querySelector(".hamburger__toggle");
+// button.addEventListener( "click", () => button.classList.toggle("toggled") );
 // var settings ****************************************************
 var $header = $('header');
 

@@ -78,26 +78,52 @@ a {
 .mobile-main-menu {
   background-color: var(--secondary-color);
   width: 100%;
-  /* height: 250px; */
-  padding-left: 10px;
+  padding: 10px 0;
 }
 .mobile-main-menu li {
   padding: 12px 0;
 }
 .mobile-main-menu li a{
   color: #fff;
-  padding: 0 0.5rem;
+  padding: 0 15px;
   font-weight: 500;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
 .mobile-sub-menu{
-  display: none;
+  display: block;
+  background-color: #fff;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+.mobile-sub-menu li {
+  padding: 7px 0px;
+}
+.mobile-sub-menu li a{
+  color: #888;
+  padding: 0 10px;
+}
+.mobile-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-angle-right {
+  color: #fff;
+  font-size: 12px;
+  padding-right: 10px;
 }
 .mobile span {
-  display: none;
+  background-color: #f74877;
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 2px 5px;
+  border-radius: 7px;
 }
+
 /* Header Icons*/
 .header-icons .icon {
   color: #222;
@@ -119,7 +145,6 @@ a {
   padding-left: 2.2rem;
   position: relative;
   right: 12px;
-  /* transition: 0.3s; */
 }
 .header-icons .zmdi-shopping-cart, .zmdi-favorite-outline{
  position: relative;
@@ -156,10 +181,10 @@ a {
   }
 
 }
-/******* Landing page  ********/
+/****************** Landing page  *************/
 .landing img {
   position: relative;
-  width: 100%;
+  max-width: 100%;
 }
 .landing .btn {
   position: relative;
@@ -170,7 +195,7 @@ a {
 .slideshow div {
   transition: 0.7s;
 }
-/***  Banner  ***/
+/****************  Banner  *****************/
 .banner {
   padding-left: 100px;
   padding-right: 100px;
@@ -262,7 +287,6 @@ hr.line {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);
   }
-
   50% {
     opacity: 1;
   }
@@ -287,10 +311,10 @@ hr.line {
   padding: 2rem 0;
 }
 /*****  Banners Responsive  ******/
-@media only screen and  (max-width: 768px){
-  .banner {
-    /* display: flex;
-    flex-wrap: wrap; */
+@media only screen and  (max-width: 992px){
+  .title {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
