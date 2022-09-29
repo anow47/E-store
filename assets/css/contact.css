@@ -1,24 +1,24 @@
 @import url("about.css");
 
 .contact {
-  padding: var(--section-padding);
+  margin: 100px 0;
 }
 .container {
   display: flex;
-  justify-content: center;
-  border: 1px solid var(--border-color);
-}
-.line {
-  background-color: var(--border-color);
-  width: 3px;
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
 }
 .message,
 .address {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+/**** message ****/
+.message {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .message h3 {
   color: #333;
@@ -50,6 +50,8 @@ textarea {
 .message ::placeholder {
   color: gray;
 }
+
+/**** address ****/
 .message button {
   margin-bottom: 4rem;
 }
@@ -61,7 +63,7 @@ textarea {
   background-color: var(--secondary-color);
 }
 .address {
-  margin: auto 5rem;
+  padding-left: 3rem;
 }
 .address > div {
   padding: 1rem 0;
@@ -78,4 +80,21 @@ textarea {
 .address .our-phone p,
 .our-email p {
   color: var(--secondary-color);
+}
+
+/***** Contact mobile Responsive *****/
+@media only screen and (max-width: 992px){
+  .message {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .container {
+    display: block;
+  }
 }

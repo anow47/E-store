@@ -123,14 +123,12 @@ header.stick {
   header{
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
   }
   .about{
     padding-left: 10px;
     padding-right: 10px;
     gap: 50px;
-  }
-  .mobile {
-    padding-top: 70px;
   }
   .empty {
     height: 0px;
