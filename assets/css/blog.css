@@ -17,13 +17,11 @@
 }
 .main .image-container {
   overflow: hidden;
-  width: 817px;
-  height: 413px;
+  width: 100%;
   margin-bottom: 1.5rem;
 }
 .main .image-container img {
-  width: 825px;
-  height: 413px;
+  width: 100%;
   transition: 0.8s;
   cursor: pointer;
 }
@@ -75,9 +73,10 @@
 }
 
 /***** side menu  ******/
+
 .side-menu .search {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.2rem 2rem;
   border-radius: 50px;
@@ -176,4 +175,31 @@
 .side-menu .tags .tag a:hover {
   border: 1px solid var(--secondary-color);
   transition: 0.3s;
+}
+
+/**** Blog Mobile Resposive ****/
+@media only screen and (max-width: 992px){
+  .blog .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 5%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .blog .container {
+    display: block;
+  }
+  .blog .main {
+    width: 100%;
+  }
+  .blog .side-menu {
+    width: 100%;
+  }
+  .side-menu .feature {
+    display: inline-flex;
+    gap: 3rem;
+  }
+  .tags {
+    margin-bottom: 8rem;
+  }
 }
