@@ -53,10 +53,10 @@ header.stick {
 .about .text h2 {
   font-weight: 900;
   color: #333;
+  padding-bottom: 10px;
 }
-.about .text p {
+.about p {
   color: #888;
-  padding-top: 2rem;
   font-weight: 100;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -64,26 +64,34 @@ header.stick {
 }
 .right {
   position: relative;
-  width: 40%;
+  width: 100%;
 }
 .frame {
   width: 370px;
   height: 370px;
   position: relative;
   overflow: hidden;
-  margin-left: 100px;
 }
-.frame-border::before {
+.frame-border-top::before {
   content: "";
   position: absolute;
   width: 370px;
   height: 370px;
   border: 3px solid #ccc;
-  top: 18px;
-  right: 10px;
+  top: 20px;
+  right: 15px;
+}
+.frame-border-bottom::before {
+  content: "";
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  border: 3px solid #ccc;
+  top: 20px;
+  left: 15px;
 }
 .right img {
-  width: 370px;
+  max-width: 100%;
   position: relative;
   transition: 0.8s ease-in-out;
 }
@@ -91,23 +99,58 @@ header.stick {
   transform: scale(1.1);
   transition: 0.7s ease-in-out;
 }
-.frame-2 {
-  width: 370px;
-  height: 370px;
-  position: relative;
-  overflow: hidden;
+.about-bottom {
+  display: flex;
+  flex-direction: row-reverse;
 }
-.frame-border-2::before {
-  content: "";
-  position: absolute;
-  width: 370px;
-  height: 370px;
-  border: 3px solid #ccc;
-  top: 18px;
-  left: 14px;
-}
-.frame:hover img,
-.frame-2:hover img {
+.frame:hover img {
   transform: scale(1.1);
   transition: 0.7s ease-in-out;
 }
+.about .steve-jobs-text {
+  padding: 1rem 2rem;
+  border-left: 3px solid var(--border-color);
+  margin: 2rem 0;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.about span {
+  color: #555;
+  font-size: 15px;  
+}
+ /**** About Mobile responsive ******/
+ @media only screen and (max-width: 992px) {
+  header{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about{
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 50px;
+  }
+  .mobile {
+    padding-top: 70px;
+  }
+  .empty {
+    height: 0px;
+  } 
+} 
+ @media only screen and (max-width: 768px) {
+  .about{
+    display: block;
+  }
+  .about .text {
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  .frame-border-top::before,
+  .frame-border-bottom::before {
+    width: 100%;
+  }
+  .frame{
+    width: 100%;
+  } 
+} 

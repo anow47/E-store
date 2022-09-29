@@ -2,7 +2,15 @@
 header {
   box-shadow: 0 0 1px 0px gray;
 }
-
 .empty {
   height: 150px;
 }
+@media only screen and (max-width: 992px) {
+  .empty{
+  height: 50px;
+  }
+  .mobile {
+    padding-top: 0px;
+  }  
+} 
+  
