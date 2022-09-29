@@ -609,3 +609,21 @@ section .load-more .btn:hover {
   font-size: 12px;
   letter-spacing: 1px;
 }
+
+/***** Footer Mobile Responsive *****/
+@media only screen and (max-width: 1200px){
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer-top {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  }
+}
+@media only screen and (max-width: 992px){
+  .footer-top {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  }
+}
