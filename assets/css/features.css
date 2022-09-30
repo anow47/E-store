@@ -37,10 +37,10 @@ header {
 .features .cart-table {
   margin-top: 4rem;
   display: flex;
+  justify-content: space-between;
   gap: 60px;
 }
 .cart-table table {
-  width: 100%;
   width: 680px;
 }
 .cart-table table,
@@ -161,7 +161,7 @@ tr {
 
 /******** Total in cart  ********/
 .cart-total {
-  max-width: 360px;
+  width: 360px;
   border: 1px solid var(--border-color);
   padding: 2rem;
 }
@@ -254,20 +254,29 @@ tr {
 
 
 /* ======== Media Queries (Medium Devices ) ======= */
-@media screen and (max-width: 1024px){
-  .header {
-      /* height: 68vh; */
+@media screen and (max-width: 1200px){
+  .features .cart-table {
+    display: block;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .cart-table table, .coupon-buttons {
+    width: 100%;
+  }
+  .cart-total {
+    width: 80%;
+    padding: 2rem;
+    margin: 3rem auto 0;
   }
 }
-
-/* ======== Media Queries (Small Devices ) ======= */
-@media screen and (max-width: 600px){
-  .header {
-      /* height: 100vh; */
+@media screen and (max-width: 992px){
+  .features {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .empty {
+    height: 30px;
   }
 
-  .header_social,
-  .scroll_down {
-      /* display: none; */
-  }
 }
+
