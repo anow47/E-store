@@ -55,9 +55,18 @@ function topFunction() {
 }
 
 // Change Search Icon on products
-const changeIcon= function (icon) {
-  icon.classList.toggle('fa-times')
+function search() {
+  let showMenu = document.getElementById("search");
+  if (showMenu.style.display === "none") {
+    showMenu.style.display = "block";
+  } else {
+    showMenu.style.display = "none";
+  }
 }
+const searchIcon = function (icon) {
+  icon.classList.toggle('zmdi-close')
+}
+
 
 // add an active class to navbar
 const activePage = window.location.pathname;

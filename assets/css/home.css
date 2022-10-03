@@ -376,6 +376,7 @@ section {
   background-color: #f8f7f7;
 }
 .filter-icon::before {
+  display: none;
   content: "";
   width: 1rem;
   height: 1rem;

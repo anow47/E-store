@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="assets/images/xfavicon.png.pagespeed.ic.wGLrQOgpzk.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -147,18 +148,16 @@
         </div>
         <div class="filter">
           <div class="filter-icon">
-            <i class="zmdi zmdi-filter-list hover"></i>
-            <!-- <i class="icon-close-search zmdi zmdi-close dis-none"></i> -->
+            <i class="zmdi zmdi-filter-list hover" ></i>
             <p class="hover">Filter</p>
           </div>
-          <div class="filter-icon">
-            <i class="zmdi zmdi-search hover" ></i> 
-            <!-- <i class="icon-close-search  zmdi zmdi-close dis-none"></i> -->
+          <div class="filter-icon" onclick="search(); searchIcon(this)">
+            <i class="zmdi zmdi-search hover" onclick="searchIcon(this)"></i> 
             <p class="hover">Search</p>
           </div>
         </div>
       </div>
-      <div class="search">
+      <div id="search" class="search" style="display: none;">
         <i class="zmdi zmdi-search hover" ></i> 
         <input type="search" value="" placeholder="Search">
       </div>
