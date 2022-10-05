@@ -23,6 +23,48 @@
   <body>
     <!-- Header  -->
     <header>
+      <div id="cart" class="cart" style="display: none;">
+        <div id="cart-items" class="cart-items">
+          <div class="cart-title">
+            <h4 class="">YOUR CART</h4>
+            <i id="close-cart" class="zmdi zmdi-close" onclick="closeCart()"></i>
+          </div>
+          <div class="cart-item">
+            <div class="item-img">
+              <img src="./assets/images/xitem-cart-01.jpg.pagespeed.ic.OR3SDRpeNa.webp" alt="">
+            </div>
+            <div class="cart-info">
+              <span>White Shirt Pleat</span>
+              <p>1 x $19.00</p>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-img">
+              <img src="./assets/images/xitem-cart-02.jpg.pagespeed.ic.i1QzWnpTT6.webp" alt="">
+            </div>
+            <div class="cart-info">
+              <span>Converse All Star</span>
+              <p>1 x $39.00</p>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-img">
+              <img src="./assets/images//xitem-cart-03.jpg.pagespeed.ic.oMriSJvVmo.webp" alt="">
+            </div>
+            <div class="cart-info">
+              <span>Nixon Porter Leather</span>
+              <p>1 x $17.00</p>
+            </div>
+          </div>
+          <div class="cart-bottom">
+            <p>Total: $75.00</p>
+            <div class="cart-buttons">
+              <button type="button" class="btn">VIEW CART</button>
+              <button type="button" class="btn">CHECK OUT</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <a class="logo" href="index.html">
           <img src="./assets/images/logo.png" alt="logo" />
       </a>
@@ -50,10 +92,11 @@
       </nav>
       <div class="header-icons">
         <i class="zmdi zmdi-search icon"></i>
-        <i class="zmdi zmdi-shopping-cart icon"><p>2</p></i>
+        <i class="zmdi zmdi-shopping-cart icon" onclick="cart()"><p>2</p></i>
         <i class="zmdi zmdi-favorite-outline icon"><p>0</p></i>
         <i class="fa-solid fa-bars" onclick="toggleMenu(); changeMenuIcon(this)" ></i>
       </div>
+      
     </header>
     <nav class="mobile">
       <ul id="mobile-main-menu" class="mobile-main-menu" style="display: none;">

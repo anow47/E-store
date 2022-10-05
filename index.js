@@ -1,3 +1,16 @@
+// Show items added to shopping cart
+
+let showMenu = document.getElementById("cart");
+function cart() {
+  if (showMenu.style.display === "none") {
+    showMenu.style.display = "block";
+  } else {
+  }
+}
+function closeCart() {
+  showMenu.style.display = "none";
+}
+
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
 function toggleMenu() {
   let showMenu = document.getElementById("mobile-main-menu");

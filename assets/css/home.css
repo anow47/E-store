@@ -8,7 +8,7 @@ header {
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
   width: 100%;
-  z-index: 9999;
+  z-index: 98;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -23,12 +23,90 @@ header.stick {
 .logo {
   width: 133px;
   height: 17px;
+  position: fixed;
 }
+/***** cart-items  *****/
+.cart {
+  position: fixed;
+  background-color: rgba(0,0,0,.6);
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.cart-items {
+  min-width: 29%;
+  min-height: 100vh;
+  background-color: #fff;
+  right: 0;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.cart-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  color: #444;
+}
+.cart-items .cart-title h4{
+  font-weight: 900;
+}
+.cart-items .cart-title i{
+  font-size: 35px;
+  cursor: pointer;
+}
+.cart-items .cart-item{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.2rem 4rem;
+}
+.cart-item .cart-info {
+  color: #888;
+  line-height: 2.2;
+}
+.cart-bottom {
+  margin-top: 6rem;
+  padding-left: 4rem;
+  padding-right: 1.5rem;
+}
+.cart-bottom p {
+  color: #333;
+  font-size: 18px;
+}
+.cart-bottom .cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.cart-bottom .cart-buttons .btn {
+  padding: 12px 30px;
+  background-color: var(--footer-color);
+}
+.cart-info span:hover{
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.cart-bottom .cart-buttons .btn:hover, .cart-info a:hover{
+  background-color: var(--secondary-color);
+}
+/***** cart-items Responsive *****/
+@media only screen and (max-width: 992px){
+  .cart-items {
+    
+  }
+}
+
+
 /*****  Header Deskton navbar  *****/
 .desktop-main-menu {
   display: flex;
   position: relative;
-  right: 70px;
+  left: 200px;
 }
 .desktop-main-menu a:is(:link, :active, :visited).active {
   color: var(--secondary-color);
@@ -160,6 +238,13 @@ a {
   font-weight: 400;
 }
 /*****  Header Mobile Responsive  *****/
+@media only screen and  (max-width: 1200px){
+  
+  header {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+}
 @media only screen and  (max-width: 992px){
   .desktop-main-menu {
     display: none;
